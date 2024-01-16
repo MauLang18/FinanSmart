@@ -802,7 +802,7 @@ class _HomePageState extends State<HomePage> {
               ),
               alignment: Alignment.center,
               child: Text(
-                months[now.month - 3],
+                months[(now.month - 3 + 12) % 12],
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w600,
@@ -829,7 +829,7 @@ class _HomePageState extends State<HomePage> {
               ),
               alignment: Alignment.center,
               child: Text(
-                months[now.month - 2],
+                months[(now.month - 2 + 12) % 12],
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w600,
@@ -856,7 +856,7 @@ class _HomePageState extends State<HomePage> {
               ),
               alignment: Alignment.center,
               child: Text(
-                months[now.month - 1],
+                months[(now.month - 1 + 12) % 12],
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w600,
